@@ -65,6 +65,11 @@ header {
     margin: auto 0;
 }
 
+.main-menu__link.has-child.active:after {
+    content: "";
+    background-image: url('../images/menu_arrow_active.svg');
+}
+
 .header__right-button__count {
     position: absolute;
     top: -5px;
@@ -80,6 +85,10 @@ header {
     line-height: 1;
     padding: 2px;
     text-align: center;
+}
+
+.wrapper {
+    height: 100%;
 }
 
 h1 {
@@ -102,7 +111,7 @@ h1 {
         top: 0;
         transition: all 0.3s ease 0s;
         background-color: #F2BE7E;
-        width: 200px;
+        width: fit-content;
         height: fit-content;
 
     }
